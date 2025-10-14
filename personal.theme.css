@@ -874,7 +874,7 @@ body {
         --scrollbar-thin-thumb: transparent;
         --scrollbar-thin-track: transparent;
 
-        --white: var(--text-0);
+        --white: var(--text-1);
         --white-500: var(--text-0);
         --redesign-button-overlay-alpha-text: var(--text-2);
 
@@ -896,7 +896,7 @@ body {
         --header-primary: var(--text-2);
         --header-secondary: var(--text-4);
         --header-muted: var(--text-4);
-        --message-hover: hsla(0,0%,5%,0.1);
+        --message-hover: var(--hover);
 
         --deprecated-text-input-bg: var(--bg-3);
         --deprecated-text-input-border: var(--border-light);
@@ -944,11 +944,11 @@ body {
         --control-text-critical-secondary-loading: var(--red-2);
         --control-text-primary-active: var(--text-0);
         --control-text-primary-default: var(--text-0);
-        --control-text-primary-hover: var(--text-0);
+        --control-text-primary-hover: var(--hover);
         --control-text-primary-loading: var(--text-0);
         --control-text-secondary-active: var(--text-3);
         --control-text-secondary-default: var(--text-3);
-        --control-text-secondary-hover: var(--text-3);
+        --control-text-secondary-hover: var(--hover);
         --control-text-secondary-loading: var(--text-3);
     }
 
@@ -1946,4 +1946,5 @@ background-color: var(--bg-5);
     padding: 0 !important;
     z-index: 1000;
 }
+
 
