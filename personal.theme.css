@@ -1933,18 +1933,4 @@ background-color: var(--bg-5);
     display: none !important;
 }
 
-/* ───────── screenshare icon visible */
-.wrapper_e131a9 > div > div.actionButtons_e131a9 > button:nth-child(3) {
-    position: fixed !important;
-    color: var(--icon-secondary);
-    background: none;
-    width: 32px !important;
-    min-width: 32px !important;
-    max-width: 32px !important;
-    left: 164px;
-    bottom: 82px;
-    padding: 0 !important;
-    z-index: 1000;
-}
-
 
