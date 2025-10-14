@@ -1883,15 +1883,3 @@ background-color: var(--bg-5);
     height: 100%;
     width: 100%;
 }
-
-/* ─────────────────── clean userpanel */
-.voiceUsers__68617 {
-    display: none !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-}
-.voiceUsers_e131a9 {
-    display: none !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-}
