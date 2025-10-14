@@ -1923,6 +1923,11 @@ background-color: var(--bg-5);
     visibility: hidden !important;
 }
 
+/* ───────── remove ping icon */
+.rtcConnectionStatusConnected__06d62 {
+    color: hsla(200,50%,20%,1) !important;
+}
+
 /* ───────── remove soundboard icon */
 .actionButtons_e131a9 > span:nth-child(7) {
     display: none !important;
@@ -1941,3 +1946,4 @@ background-color: var(--bg-5);
     padding: 0 !important;
     z-index: 1000;
 }
+
