@@ -1863,7 +1863,7 @@ background-color: var(--bg-5);
 
 .contentColumn__23e6b, .customColumn__23e6b {
     flex: 1 1 auto;
-    max-width: 120%;
+    max-width: 85%;
     min-height: 100%;
     min-width: 20%;
 }
@@ -1889,3 +1889,4 @@ display: none;
     pointer-events: none !important;
     visibility: hidden !important;
 }
+
