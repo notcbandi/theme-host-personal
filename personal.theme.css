@@ -1887,8 +1887,21 @@ display: none;
     visibility: hidden !important;
 }
 
+/* ─────────────────── unread messages */
+     
+.visual-refresh {
+    .newMessagesBar__0f481 {
+        background: none;
+        box-shadow: none;
+        height: 0;
+        left: 600px;
+        top: 875px;
+        scale: 0.7;
+    }
 
+    .barButtonAlt__0f481 {
+        display: none;
+        
+    }
 
-
-
-
+}
