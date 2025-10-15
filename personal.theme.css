@@ -1,15 +1,9 @@
 /* main.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(https://abbie.github.io/discord-css/import.css);
 @import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
-
-    /* ───────── fonts */
-* {
-    font-family: "Roboto" !important;
-    font-weight: 300;
-}
 
 :root {
     container-name: root;
@@ -21,6 +15,10 @@
 
 body {
     container-name: body;
+
+    /* font, change to '' for default discord font */
+    --font: 'figtree';
+    --code-font: '';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
@@ -447,6 +445,12 @@ body {
     .slider_a562c8 .barFill_a562c8 {
         border: 0px solid hsla(0, 0%, 100%, .1);
     }
+}
+
+body {
+    --font-primary: var(--font), 'gg sans';
+    --font-display: var(--font), 'gg sans';
+    --font-code: var(--code-font), 'gg mono';
 }
 
 [class*='scroll'] {
