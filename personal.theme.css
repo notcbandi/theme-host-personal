@@ -326,16 +326,13 @@ body {
     }
 
     .newMessagesBar__0f481 /* ──────── tweaked ──────── unread messages bar */ {
-        background: none;
+        background-color: hsla(0,0%,0%,0);
+        border-radius: 0 0 8px 8px;
         box-shadow: none;
-        height: 0;
-        left: 600px;
-        top: 875px;
+        height: 32px;
+        left: 900px;
+        top: 870px;
         scale: 0.7;
-    }
-
-    .barButtonAlt__0f481 {
-        display: none;
     }
 
     .bottom__7aaec /* channel list new unreads pill */,
@@ -1175,6 +1172,14 @@ body {
             background-color: var(--accent-new);
         }
 
+        .newMessagesBar__0f481 /* unread bar */ {
+            background-color: none;
+        }
+        .barButtonAlt__0f481 /* unread bar mark as read button */ {
+            --button-secondary-background: var(--accent-3);
+            --button-secondary-background-hover: var(--accent-4);
+        }
+
         .updateIconForeground__49676 /* update button */ {
             fill: var(--green-1);
         }
@@ -1885,6 +1890,7 @@ display: none;
     pointer-events: none !important;
     visibility: hidden !important;
 }
+
 
 
 
