@@ -1820,10 +1820,7 @@ div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
     display: none;
 }
 
-.searchBar__35e86 {
-    display: none !important;
-}
-
+.searchBar__35e86,
 .chatGradient__36d07 {
     display: none !important;
 }
@@ -1839,19 +1836,11 @@ div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
 }
 
 .interactive__972a0:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
-.chatTypingGradientNotAtBottom__36d07 {
-    background: none !important;
-    height: 0px;
-}
-
-.chatGradient__36d07 {
-    background: none !important;
-    height: 0px;
-}
-
+.chatGradient__36d07,
+.chatTypingGradientNotAtBottom__36d07,
 .chatTypingGradientAtBottom__36d07 {
     background: none !important;
     height: 0px;
@@ -1859,6 +1848,7 @@ div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
 
 .layer__960e4 {
 background-color: var(--bg-5);
+
 }
 
 /* ─────────────────── wider settings */
@@ -1882,4 +1872,20 @@ background-color: var(--bg-5);
     flex: 1;
     height: 100%;
     width: 100%;
+}
+
+/* ─────────────────── clean userpanel */
+.largePing__06d62,
+.voiceUsers__68617,
+.collapsed__68617,
+.scroller__68617,
+.actionButtons_e131a9 {
+display: none;
+}
+
+[aria-label="Disable Game Activity"],
+[aria-label="Disable Game Activity"]:hover {
+    display: none !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
 }
