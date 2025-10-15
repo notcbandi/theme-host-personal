@@ -5,6 +5,12 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
 
+    /* ───────── fonts */
+* {
+    font-family: "Roboto" !important;
+    font-weight: 300;
+}
+
 :root {
     container-name: root;
     --custom-guild-list-padding: 12px;
@@ -15,10 +21,6 @@
 
 body {
     container-name: body;
-
-    /* font, change to '' for default discord font */
-    --font: '';
-    --code-font: '';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
@@ -445,12 +447,6 @@ body {
     .slider_a562c8 .barFill_a562c8 {
         border: 0px solid hsla(0, 0%, 100%, .1);
     }
-}
-
-body {
-    --font-primary: var(--font), 'gg sans';
-    --font-display: var(--font), 'gg sans';
-    --font-code: var(--code-font), 'gg mono';
 }
 
 [class*='scroll'] {
@@ -1652,9 +1648,9 @@ div[class*="subText"] > div > svg[class*="questsIcon"] {
 /* ─────────────────── PinDMs Fixes */
 .vc-pindms-section-container {
     text-transform: unset !important;
-    font-family: var(--font);
+    font-family: "Roboto";
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
    /* color: var(--channels-default) !important; */
 }
 
@@ -1890,6 +1886,7 @@ display: none;
     pointer-events: none !important;
     visibility: hidden !important;
 }
+
 
 
 
