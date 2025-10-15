@@ -1,8 +1,9 @@
 /* main.css */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(https://abbie.github.io/discord-css/import.css);
 @import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
 
 :root {
     container-name: root;
@@ -1889,4 +1890,5 @@ display: none;
     pointer-events: none !important;
     visibility: hidden !important;
 }
+
 
