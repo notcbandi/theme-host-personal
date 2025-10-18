@@ -1958,3 +1958,9 @@ display: none;
     }
   }
 }
+
+/* ─────────────────── chat date-stamp */
+span.content__908e2 {
+    background: none;
+    color: hsla(204,35%,35%,0.3);
+}
