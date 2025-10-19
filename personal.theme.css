@@ -824,7 +824,7 @@ body {
         --text-warning: var(--yellow-1);
         --text-default: var(--text-3);
         --text-feedback-critical: var(--red-1);
-        --text-feedback-positive: hsla(200,50%,20%,1);
+        --text-feedback-positive: var(--accent-5);
         --text-feedback-info: red;
         --text-feedback-warning: var(--yellow-1);
         --text-tertiary: var(--text-4);
@@ -1964,3 +1964,4 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
