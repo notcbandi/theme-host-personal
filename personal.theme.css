@@ -356,6 +356,7 @@ body {
 
     /* general chat bar improvements */
     .channelTextArea_f75fb0 /* chat bar */ {
+        background: hsla(0,0%,0%,1);
         padding: 7px;
         border-radius: 2px;
         
@@ -1968,6 +1969,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
