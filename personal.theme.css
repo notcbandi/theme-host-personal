@@ -79,6 +79,10 @@ body {
         width: 100%;
     }
 
+    .root_bfe55a /* call background */ {
+        background: hsla(0,0%,0%,0.4);
+    }
+
     .sidebar_c48ade /* server list + channel list + user panel group */ {
         margin: 0 var(--gap) var(--gap) var(--gap);
     }
@@ -1964,6 +1968,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
