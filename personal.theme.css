@@ -1857,29 +1857,6 @@ background-color: var(--bg-5);
 
 }
 
-/* ─────────────────── wider settings */
-.sidebarRegionScroller__23e6b {
-    align-items: flex-start;
-    background: hsla(0,0%,0%,1);
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.contentColumn__23e6b, .customColumn__23e6b {
-    flex: 1 1 auto;
-    max-width: 85%;
-    min-height: 100%;
-    min-width: 20%;
-}
-
-.contentTransitionWrap__23e6b {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-}
-
 /* ─────────────────── clean userpanel */
 .largePing__06d62,
 .voiceUsers__68617,
@@ -1969,6 +1946,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
