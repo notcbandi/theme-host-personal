@@ -1825,6 +1825,11 @@ nav.wrapper_ef3116{
     }
 }
 
+/* ─────────────────── submenu panel */
+.menu_c1e9c4,
+.submenuPaddingContainer_c1e9c4 {
+    padding-right: 8px;
+}
 
 /* ─────────────────── Overrides */
 div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
@@ -1951,4 +1956,3 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
-
