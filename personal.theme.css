@@ -584,7 +584,7 @@ body {
     --bg-1: hsla(0,0%,20%,1); /* ──── dark buttons when clicked */
     --bg-2: hsla(0,0%,15%,1); /* ──── dark buttons */
     --bg-3: hsla(0,0%,0%,1); /* ──── spacing, secondary elements */
-    --bg-4: hsla(0,0%,5%,1); /* ──── main background color */
+    --bg-4: hsl(0, 0%, 0%); /* ──── main background color */
     --bg-5: hsla(0,0%,0%,0.5); /* ──── half transparent */
     --message-hover: hsla(0,0%,40%,0.2); /* ──── buttons when hovered */
     --active: hsla(0,0%,40%,0.3%); /* ──── clicked or selected */
@@ -1949,5 +1949,6 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
