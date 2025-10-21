@@ -1835,10 +1835,15 @@ cursor: pointer;
 }
 
 /* ─────────────────── remove arrow next to mute/deafen */
-.micButtonParent__37e49 .buttonChevron__37e49 {
-    display: none !important;
+div[class^=micButtonParent__] {
+  button[role="switch"] {
+    border-radius: var(--radius-sm) !important;
+    
+    ~ button {
+      display: none;
+    }
+  }
 }
-
 /* ─────────────────── show toolbar on hover */
 :root {
     --bartender-width: 4ch;}
@@ -2029,9 +2034,3 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
-
-
-
-
-
-
