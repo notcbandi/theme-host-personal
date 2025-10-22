@@ -425,7 +425,7 @@ body {
     }
 
     .outer_c0bea0 /* profile outer */ {
-        border: 1px solid var(--profile-border);
+        border: 1px solid hsla(0,0%,50%,1);
         background-position: center calc(-1 * var(--border-thickness));
         background-size: 100% calc(100% + 2 * var(--border-thickness));
     }
@@ -2036,5 +2036,6 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
