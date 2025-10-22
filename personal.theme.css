@@ -560,8 +560,6 @@ body {
     }
 }
 
-
-
 /* colors.css */
 @property --colors {
     syntax: 'off | on';
@@ -650,8 +648,6 @@ body {
     --purple-3: hsl(270,75%,37%);
     --purple-4: hsl(270,62%,43%);
     --purple-5: hsl(270,50%,50%);
-
-    --profile-border: hsla(0,0%,50%,1);
 }
 
  /* --hk-1: hsl(271, 26%, 51%);
@@ -2036,6 +2032,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
