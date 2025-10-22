@@ -1774,16 +1774,6 @@ div[class*="subText"] > div > svg[class*="questsIcon"] {
     scale: 0.8;
 }
 
-
-/* ─────────────────── Remove User Profile Borders */
-[class*="userProfile"],
-[class*="userPopout"],
-.user-profile-modal,
-.user-profile-popout {
-    box-shadow: none !important;
-
-}
-
 /* ─────────────────── Minimize searchbar */
 .upperContainer__9293f .toolbar__9293f .search__49676 {
 order: -1;
@@ -2032,8 +2022,6 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
-
-
 
 
 
