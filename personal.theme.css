@@ -425,7 +425,7 @@ body {
     }
 
     .outer_c0bea0 /* profile outer */ {
-        border: 0px solid var(--border-subtle);
+        border: 1px solid var(--profile-border);
         background-position: center calc(-1 * var(--border-thickness));
         background-size: 100% calc(100% + 2 * var(--border-thickness));
     }
@@ -650,6 +650,8 @@ body {
     --purple-3: hsl(270,75%,37%);
     --purple-4: hsl(270,62%,43%);
     --purple-5: hsl(270,50%,50%);
+
+    --profile-border: hsla(0,0%,50%,1);
 }
 
  /* --hk-1: hsl(271, 26%, 51%);
@@ -2034,3 +2036,4 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
