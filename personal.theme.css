@@ -1055,14 +1055,12 @@ body {
         }
         .container__3f21e .slider__3f21e > svg > path /* settings checkbutton check */ {
             fill: var(--bg-1) !important;
-            transition: fill 0.2s ease;
         }
         .container__3f21e.checked__3f21e .slider__3f21e > svg > path /* settings checkbutton check */ {
             fill: var(--accent-2) !important;
         }
         .container__3f21e rect[fill='white'] /* settings checkbutton slider */ {
             fill: var(--text-3) !important;
-            transition: fill 0.2s ease;
         }
         .container__3f21e.checked__3f21e rect[fill='white'] /* settings checkbutton slider */ {
             fill: var(--text-0) !important;
@@ -2022,6 +2020,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
