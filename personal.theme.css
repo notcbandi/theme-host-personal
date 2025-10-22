@@ -1048,7 +1048,6 @@ body {
 
         .container__3f21e /* settings checkbutton background */ {
             background-color: var(--bg-1) !important;
-            transition: background-color 0.2s ease;
         }
         .container__3f21e.checked__3f21e /* settings checkbutton background */ {
             background-color: var(--accent-2) !important;
@@ -2020,6 +2019,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
