@@ -529,6 +529,7 @@ body {
         background: var(--background-image-url);
         background-size: cover;
         background-position: center;
+        opacity 0.2 !important;
     }
 }
 
@@ -2019,6 +2020,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
