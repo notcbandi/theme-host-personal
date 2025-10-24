@@ -359,13 +359,15 @@ body {
         border-radius: 2px;
         
     }
+    .channelTextArea__74017 /* ──────── chatbox grad */ {
+        border: transparent;
+    }
     .themedBackground__74017 /* chat bar inner */ {
         background: none;
     }
     .slateTextArea_ec4baf /* actual typing area */ {
         margin-left: 2px;
     }
-
     /* ──────── tweaked ──────── improve unread divider */
     .divider__908e2 {
         border-width: 0px;
@@ -2017,6 +2019,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
