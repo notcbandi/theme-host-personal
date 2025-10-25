@@ -1303,17 +1303,14 @@ body {
   --dms-icon-color-after: var(--white);
   --dms-background-image-url: url('');
   --dms-background-image-size: cover;
-  --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+  --dms-background-color: ;
 }
-
-/* === ICON BEHAVIOR === */
-
 /* Default (off/hide/custom controlled via body attribute) */
-body[data-custom-dms-icon="off"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
   color: var(--dms-icon-color-before);
 }
-body[data-custom-dms-icon="off"] .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
-body[data-custom-dms-icon="off"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8 {
+body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
+body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8 {
   color: var(--dms-icon-color-after);
 }
 
@@ -2005,6 +2002,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
