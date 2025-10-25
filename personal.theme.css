@@ -1295,77 +1295,93 @@ body {
     }
 }
 
-/* dms-button */
+/* dms-button.css */
 body {
-  --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
-  --dms-icon-svg-size: 90%;
-  --dms-icon-color-before: var(--icon-secondary);
-  --dms-icon-color-after: var(--white);
-  --dms-background-image-url: url('');
-  --dms-background-image-size: cover;
-  --dms-background-color: ;
-}
-/* Default (off/hide/custom controlled via body attribute) */
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
-  color: var(--dms-icon-color-before);
-}
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8 {
-  color: var(--dms-icon-color-after);
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
 }
 
-/* Custom SVG icon */
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
-  display: none;
-}
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 65%;
-  height: 65%;
-  background: var(--dms-icon-color-before);
-  mask-image: var(--dms-icon-svg-url);
-  mask-size: var(--dms-icon-svg-size);
-  mask-position: center;
-  mask-repeat: no-repeat;
-  transition: background-color 0.15s ease-out;
-}
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
-body[data-custom-dms-icon="custom"] .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
-  background: var(--dms-icon-color-after);
-  transform: rotate(-360deg) scale(0.8);
+@property --custom-dms-icon {
+    syntax: 'off | hide | custom';
+    inherits: false;
+    initial-value: custom;
 }
 
-/* Optional animation toggle */
-body[data-animations="on"][data-custom-dms-icon="custom"]
-.wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
-  transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition, 0.4s ease);
+@container body style(--custom-dms-icon: off) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+        color: var(--dms-icon-color-before);
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8 {
+        color: var(--dms-icon-color-after);
+    }
 }
 
-/* Hide icon completely */
-body[data-custom-dms-icon="hide"]
-.wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
-  display: none;
+@container body style(--custom-dms-icon: custom) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+        display: none;
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        background: var(--dms-icon-color-before);
+        mask-image: var(--dms-icon-svg-url);
+        mask-size: var(--dms-icon-svg-size);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        transition: background-color 0.15s ease-out;
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
+        transform: rotate(0deg) scale(1);
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
+        background: var(--dms-icon-color-after);
+        transform: rotate(-360deg) scale(0.8);
+    }
+
+    @container body style(--animations: on) {
+        .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
+            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition);
+        }
+    }
 }
 
-/* === BACKGROUND === */
-
-body[data-custom-dms-background="image"]
-.wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
-  background-image: var(--dms-background-image-url);
-  background-color: transparent !important;
-  background-size: var(--dms-background-image-size);
-  background-position: center;
-  background-repeat: no-repeat;
+@container body style(--custom-dms-icon: hide) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+        display: none;
+    }
 }
 
-body[data-custom-dms-background="color"]
-.wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
-  background: var(--dms-background-color);
+@property --custom-dms-background {
+    syntax: 'off | image | color';
+    inherits: false;
+    initial-value: off;
 }
 
+@container body style(--custom-dms-background: image) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+        background-image: var(--dms-background-image-url);
+        background-color: transparent !important;
+        background-size: var(--dms-background-image-size);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
 
+@container body style(--custom-dms-background: color) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+        background: var(--dms-background-color);
+    }
+}
 /* ─────────────────── top-bar.css */
 body {
     --top-bar-height: 28px;
@@ -2002,6 +2018,7 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
+
 
 
 
