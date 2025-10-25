@@ -29,7 +29,6 @@ body {
     /* panel separation */
     .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
-    .panels_c48ade /* user panel */,
     .chat_f75fb0 > .subtitleContainer_f75fb0 /* chat titlebar */,
     .chatContent_f75fb0 /* chat */,
     .container_c8ffbb /* member list */,
@@ -69,14 +68,19 @@ body {
     }
 
     .panels_c48ade /* user panel */ {
+        background-image: url(https://i.imgur.com/6ZaNcsu.gif);
+        background-color: transparent !important;
         padding: 5px;
         bottom: 0;
         left: 0;
         width: 100%;
+
+        background-image: var(--dms-background-image-url);
+        background-color: transparent !important;
     }
 
     .root_bfe55a /* call background */ {
-        background: hsla(0,0%,0%,0.4);
+        
     }
 
     .sidebar_c48ade /* server list + channel list + user panel group */ {
